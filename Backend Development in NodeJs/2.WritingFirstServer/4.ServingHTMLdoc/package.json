@@ -1,0 +1,11 @@
+{
+  "name": "servinghtmldoc",
+  "version": "1.0.0",
+  "description": "Rendering HTML doc as a whole into Browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bharath",
+  "license": "ISC"
+}

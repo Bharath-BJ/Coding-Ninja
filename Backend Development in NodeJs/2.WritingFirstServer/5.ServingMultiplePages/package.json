@@ -1,0 +1,11 @@
+{
+  "name": "servingmultiplepages",
+  "version": "1.0.0",
+  "description": "Rendering multiple pages based on url from client side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bharath",
+  "license": "ISC"
+}
