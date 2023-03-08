@@ -1,0 +1,49 @@
+#container
+{
+    position: absolute;
+    top:20%;
+    left: 40%;
+}
+.switch
+{
+    display:inline-block;
+    width: 110px;
+    height: 60px;
+    margin: 0 10px;
+    position: relative; /*To use it as relative parent for the span element*/ 
+}
+.switch input{display:none;}
+
+.slider
+{
+    position: absolute;
+    cursor:pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: lightgreen;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider:before
+{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: black;
+    top:5px;
+    left: 5px;
+    transition: 0.4s;
+}
+input:checked + .slider
+{
+    background-color: white;
+}
+input:checked + .slider::before
+{
+    transform: translateX(50px) ;
+}

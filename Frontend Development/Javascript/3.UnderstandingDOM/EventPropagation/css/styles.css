@@ -1,0 +1,15 @@
+#outerDiv
+{
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    margin: 50px;
+    padding: 50px;
+}
+#innerDiv
+{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin-top: 80px;
+}
