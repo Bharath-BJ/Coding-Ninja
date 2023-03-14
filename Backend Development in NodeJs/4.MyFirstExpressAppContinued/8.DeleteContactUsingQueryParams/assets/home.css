@@ -1,0 +1,43 @@
+body
+{
+    text-align: center;
+    font-family: sans-serif;
+}
+#page-heading
+{
+    color: purple;
+}
+ul
+{
+    list-style: none;
+    padding: 0%;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    border: 2px solid black;
+    border-radius: 5px 5px; 
+}
+ul .contact-item
+{
+    background-color: olive;
+    border-bottom: 1px solid black;
+}
+ul .contact-item p
+{
+    display: inline-block;
+    height: 1rem;
+    width: 17rem;
+    font-weight: 700;
+}
+ul .contact-item .delete-button
+{
+    color: orangered;
+}
+ul .contact-item:hover
+{
+    background-color: chartreuse;
+}
+ul .contact-item p:hover
+{
+    color:black;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "middlewarefunctions",
+  "version": "1.0.0",
+  "description": "Checking how to create userdefined middleware functions and how it  works",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bharath",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
