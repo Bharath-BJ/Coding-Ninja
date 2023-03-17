@@ -1,0 +1,16 @@
+{
+  "name": "2.creatingdbschema",
+  "version": "1.0.0",
+  "description": "Creating the schema where we are defining what's in each document",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bharath",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
+  }
+}
