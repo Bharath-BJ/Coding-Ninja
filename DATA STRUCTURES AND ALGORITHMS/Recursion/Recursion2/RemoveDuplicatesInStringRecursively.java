@@ -27,17 +27,30 @@ public class RemoveDuplicatesInStringRecursively {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		String input = s.next();
-		System.out.println(removeConsecutiveDuplicates(input));
+		System.out.println(removeConsecutiveDuplicates1(input));
+		System.out.println(removeConsecutiveDuplicates2(input));
 	}
-	public static String removeConsecutiveDuplicates(String s) {
+	// This is approach using head recursion
+	public static String removeConsecutiveDuplicates1(String s) {
 		// Write your code here
 	    if(s.length() == 1)
             return s;
-        String smallOutput= removeConsecutiveDuplicates(s.substring(1));
+        String smallOutput= removeConsecutiveDuplicates1(s.substring(1));
         char c=s.charAt(1);
         if(s.charAt(0) == c )
             return smallOutput;
         else
             return s.charAt(0) + smallOutput;
+	}	
+	// This is approach using tail recursion
+	public static String removeConsecutiveDuplicates2(String s) {
+	    if(s.length() <= 1)
+            return s;
+	    if(s.charAt(0)==s.charAt(1))
+	    	s=s.substring(1);
+        String smallOutput=removeConsecutiveDuplicates2(s.substring(1));
+        if(s.length()==1 || s.length() > 1 && s.charAt(0)!=s.charAt(1))
+	    	smallOutput=s.charAt(0)+smallOutput;
+    return smallOutput;
 	}	
 }
