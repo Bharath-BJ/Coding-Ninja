@@ -31,15 +31,28 @@ public class RemoveXFromString {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		String input = s.next();
-		System.out.println(removeX(input));
+		System.out.println(removeX1(input));
+		System.out.println(removeX2(input));
 	}
-	public static String removeX(String input){
+	// Approach 1 is  more of head recusion 
+	public static String removeX1(String input){
         if(input.length() == 0)
             return input;
-        String smallOutput = removeX(input.substring(1));
+        String smallOutput = removeX1(input.substring(1));
         if(input.charAt(0) == 'x')
             return smallOutput;
         else
             return input.charAt(0) + smallOutput;
+	}	
+	// Approach 2 is more of tail recursion
+	public static String removeX2(String input){
+        if(input.length() == 0)
+            return input;
+        if(input.charAt(0) == 'x')
+            input=input.substring(1);
+        String smallOutput = removeX2(input.substring(1));
+        if(input.charAt(0) != 'x')
+        	smallOutput=input.charAt(0)+smallOutput;
+    return smallOutput;
 	}	
 }
