@@ -1,0 +1,20 @@
+#root
+{
+    font-family: sans-serif;
+}
+
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+ul div
+{
+    margin: 20px;
+    padding: 10px;
+    background-color: #18f3f3;
+    border-radius: 4px;
+}
