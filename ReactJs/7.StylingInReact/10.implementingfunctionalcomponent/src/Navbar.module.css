@@ -1,0 +1,44 @@
+.main{
+    width:100%;
+    height:40px;
+    background-color:#196179;
+    display:flex;
+    justify-content:space-between;
+}
+
+.title
+{
+    margin-left:10px;
+    font-size:24px;
+    font-weight:600;
+    text-transform:uppercase;
+    color:beige;
+}
+
+.title:hover
+{
+    color:grey;
+}
+
+.cartContainer
+{
+    position:relative;
+    right:10px;
+}
+
+.cartIcon
+{
+    height:30px;    
+    margin: 5px;
+}
+
+.cartCount
+{
+    background-color:orange;
+    border-radius:50%;
+    padding:0px 2px;
+    position:absolute;
+    bottom:20px;
+    right:-5px;
+    font-size: 11px;
+}
